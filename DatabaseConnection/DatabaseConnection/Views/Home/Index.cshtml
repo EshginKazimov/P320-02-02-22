@@ -1,0 +1,18 @@
+﻿@*@model List<Student>*@
+@model HomeViewModel
+
+<h1>Home Index</h1>
+
+<h2>Students</h2>
+
+@foreach(var item in Model.Students)
+{
+    <li>@item</li>
+}
+
+<h2>Teachers</h2>
+
+@foreach(var item in Model.Teachers)
+{
+    <li>@item</li>
+}
